@@ -32,7 +32,7 @@
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
 			"market": feat[i].market,
-            		"candle_date_time_kst": feat[i].candle_date_time_kst
+            "candle_date_time_kst": feat[i].candle_date_time_kst
                 });
             }
 
