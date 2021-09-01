@@ -7,6 +7,10 @@
 		var cols = [{
             id: "market",
             dataType: tableau.dataTypeEnum.String
+        }, {
+            id: "candle_date_time_kst",
+            alias: "date",
+            dataType: tableau.dataTypeEnum.date
         }];
 
         var tableSchema = {
@@ -28,6 +32,7 @@
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
 			"market": feat[i].market,
+            "candle_date_time_kst": feat[i].candle_date_time_kst
                 });
             }
 
