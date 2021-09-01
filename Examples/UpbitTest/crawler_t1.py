@@ -1,17 +1,18 @@
 import requests
 import os
 
-check_file = os.path.isfile("D:\\4. My github\\webdataconnector\\Examples\\upbit test\\upbit_data_t1.json")
+# check_file = os.path.isfile("D:\\4. My github\\webdataconnector\\Examples\\upbit test\\upbit_data_t1.json")
 
 # check_file = "upbit_data_t1.json"
 
 
 
-if check_file is True:
-    file = open("upbit_data_t1.json", 'w')
-if check_file is False:
-    file = open("upbit_data_t1.json", 'w+')
+#if check_file is True:
+#   file = open("upbit_data_t1.json", 'w')
+#if check_file is False:
+#    file = open("upbit_data_t1.json", 'w+')
 
+file = open("upbit_data_t1.json", 'w')
 
 def func1():
     market = {"KRW-ADA", "KRW-BTC", "KRW-AXS", "KRW-DOGE", "KRW-ETC", "KRW-ETH", "KRW-LINK", "KRW-LTC", "KRW-MANA", "KRW-NEO", "KRW-TRX", "KRW-VET", "KRW-XRP"}
