@@ -64,7 +64,7 @@
                     "low_price": feat[i].low_price,
                     "trade_price": feat[i].trade_price,
                     "candle_acc_trade_price": feat[i].candle_acc_trade_price,
-                    "candle_ac_trade_volume": feat[i].candle_ac_trade_volume,
+                    "candle_acc_trade_volume": feat[i].candle_acc_trade_volume,
                     "prev_closing_price": feat[i].prev_closing_price,
                     "change_price": feat[i].change_price,
                     "change_rate": feat[i].change_rate      
