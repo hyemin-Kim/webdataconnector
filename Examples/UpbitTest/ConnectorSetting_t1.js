@@ -11,6 +11,32 @@
             id: "candle_date_time_kst",
             alias: "date",
             dataType: tableau.dataTypeEnum.date
+        }, {
+            id: "opening_price",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "high_price",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "low_price",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "candle_acc_trade_price",
+            alias: "acc_trade_price",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "candle_acc_trade_volume",
+            alias: "acc_trade_volume",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "prev_closing_price",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "change_price",
+            dataType: tableau.dataTypeEnum.float
+        }, {
+            id: "change_rate",
+            dataType: tableau.dataTypeEnum.float
         }];
 
         var tableSchema = {
@@ -32,7 +58,16 @@
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
 			        "market": feat[i].market,
-                    "candle_date_time_kst": feat[i].candle_date_time_kst
+                    "candle_date_time_kst": feat[i].candle_date_time_kst,
+                    "opening_price": feat[i].opening_price,
+                    "high_price": feat[i].high_price,
+                    "low_price": feat[i].low_price,
+                    "trade_price": feat[i].trade_price,
+                    "candle_acc_trade_price": feat[i].candle_acc_trade_price,
+                    "candle_ac_trade_volume": feat[i].candle_ac_trade_volume,
+                    "prev_closing_price": feat[i].prev_closing_price,
+                    "change_price": feat[i].change_price,
+                    "change_rate": feat[i].change_rate      
                 });
             }
 
