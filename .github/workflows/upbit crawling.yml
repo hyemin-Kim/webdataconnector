@@ -34,7 +34,7 @@ jobs:
       run: |
         git config --local user.email "hyemin2060@naver.com"
         git config --local user.name "hyemin-Kim"
-        git add ../Examples/UpbitTest/upbit_data_t1.json
+        git add ./Examples/UpbitTest/upbit_data_t1.json
         git commit -m "Auto - Update data"
     - name: Push
       uses: ad-m/github-push-action@master
